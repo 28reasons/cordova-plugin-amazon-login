@@ -8,8 +8,6 @@
     <description>A Cordova Plugin for Amazon Login</description>
     <license>MIT</license>
     <keywords>Amazon, Amazon Login, Login, OAuth, Identity, Authentication</keywords>
-    <repo>https://github.com/edu-com/cordova-plugin-amazon-login.git</repo>
-    <issue>https://github.com/edu-com/cordova-plugin-amazon-login/issues</issue>
 
     <!-- android -->
     <platform name="android">
@@ -24,12 +22,12 @@
             </feature>
         </config-file>
 
-        <config-file target="AndroidManifest.xml" parent="/manifest">
+        <config-file target="app/src/main/AndroidManifest.xml" parent="/manifest">
             <uses-permission android:name="android.permission.INTERNET"/>
             <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
         </config-file>
 
-        <config-file target="AndroidManifest.xml" parent="/manifest/application">
+        <config-file target="app/src/main/AndroidManifest.xml" parent="/manifest/application">
             <activity android:name="com.amazon.identity.auth.device.workflow.WorkflowActivity"
                       android:theme="@android:style/Theme.NoDisplay"
                       android:allowTaskReparenting="true"
